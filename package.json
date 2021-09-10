@@ -1,0 +1,20 @@
+{
+  "name": "MY_FULL_WEBSITE",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "luxon": "^2.0.2",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.9"
+  },
+  "devDependencies": {
+    "tailwindcss-pseudo-elements": "^2.0.0"
+  },
+  "scripts": {
+    "build:css": "tailwind build -i src/style.css -o style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
