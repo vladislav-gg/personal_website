@@ -19,10 +19,10 @@
     </head>
     <body class="h-full bg-gray-100">
         <div class=" font-ptSans bg-gray-100">
-            <header class="animate__animated animate__fadeInDown mt-12 ml-5 md:ml-0 bg-gray-100 relative" >
+            <header class="animate__animated animate__fadeInDown mt-12 md:ml-0 bg-gray-100 relative z-50" >
                 <nav class="flex justify-between md:grid grid-cols-8 gap-10 ">
                     <div class="md:col-start-2 md:mb-0">
-                        <a href="/" class="logo text-2xl">Vladislav Goian</a>
+                        <a href="/" class="logo text-2xl ml-5 md:ml-0">Vladislav Goian</a>
                     </div>
                     <!-- MOBILE BUTTON -->
                     <div class="md:hidden flex items-center flex-col mr-5">
@@ -39,10 +39,17 @@
 							<path d="M4 6h16M4 12h16M4 18h16"></path>
 						</svg>
 					</button>
-                    <div class="hidden mobile-menu ">
-                        <div class=" flex flex-col text-left">
-                            <div class="md:hidden"><a href="https://github.com/vladislav-gg" class="text-xl font-ptSans font-medium undercover">Github</a></div>
-                            <div class="md:hidden"><a href="https://www.linkedin.com/in/vladislav-goian-102419145/" class="text-xl font-ptSans font-medium undercover">Linkedin</a></div>
+                    <div class="hidden mobile-menu fixed top-10 left-0 bottom-0 flex flex-col w-full max-w-sm bg-gray-100 border-r overflow-y-auto min-h-screen ">
+                        <div class=" flex flex-col text-left mt-12 ml-5">
+                            <div class="md:hidden mt-10"><a href="https://github.com/vladislav-gg" class="text-7xl font-ptSans font-semibold undercover">Github</a></div>
+                            <div class="md:hidden mt-10"><a href="https://www.linkedin.com/in/vladislav-goian-102419145/" class="text-7xl font-ptSans font-semibold undercover">Linkedin</a></div>
+                            <div class="md:hidden mt-10">
+                                <a href="https://www.linkedin.com/in/vladislav-goian-102419145/" class="text-7xl font-ptSans font-semibold undercover">Projects</a>
+                                <div class="mt-5 ml-8 flex flex-col">
+                                    <a href="https://vladislavgoian.com/theatre" class="font-ptSans text-2xl font-medium  ">Chernivtsi theatre</a>
+                                    <a href="https://vladislavgoian.com/university" class="font-ptSans text-2xl font-medium mt-5 ">Chernivtsi university</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 					</div>
@@ -62,7 +69,7 @@
                 </div>
             </div>
             <!-- PROJECTS -->
-            <section class= "animate__animated animate__fadeInUp grid md:grid-cols-8 m-5 mt-32 md:mt-56">
+            <section class= "animate__animated animate__fadeInUp grid md:grid-cols-8 m-5 mt-32 md:mt-56 z-0">
                 <div class="font-ptSerif text-7xl md:col-start-2">
                     <h1>Projects</h1>
                 </div>
@@ -78,7 +85,7 @@
                             The description of my first project. More text to  -->
                         </span>
                         <div class="flex items-center mt-5 text-lg md:text-2xl text-gray-500 mb-16">
-                            <a href="https://chernivtsi-theatre.vercel.app/" class="inline-block mr-10 hover:text-green-500">Link to website</a>
+                            <a href="https://chernivtsi-theatre.vercel.app/" class="inline-block mr-10 hover:text-green-500">Link to a website</a>
                             <a href="https://github.com/vladislav-gg/chernivtsi_app" class="inline-block hover:text-green-500">Github</a>
                             <span class="mt-2 flex items-center"></span>
                       </div>
@@ -91,10 +98,10 @@
                                 <img src="img/chernivtsi-university4.webp" loading="lazy" alt="myImage" class="object-contain w-full h-full overflow-hidden transform transition duration-700 hover:scale-105">
                             </a>
                         </div>
-                        <h2 class="mt-16 text-3xl md:text-6xl font-ptSerif italic">Chernivtsi university</h2>
+                        <h2 class="mt-16 text-3xl md:text-6xl font-ptSerif italic hover:text-gray-600"><a href="https://vladislavgoian.com/university">Chernivtsi university</a></h2>
                         </span>
                         <div class="flex items-center mt-5 text-lg md:text-2xl text-gray-500 mb-16">
-                            <a href="https://chernivtsiuniversity.vercel.app/" class="inline-block mr-10 hover:text-green-500">Link to website</a>
+                            <a href="https://chernivtsiuniversity.vercel.app/" class="inline-block mr-10 hover:text-green-500">Link to a website</a>
                             <a href="https://github.com/vladislav-gg/chernivtsi_university" class="inline-block hover:text-green-500">Github</a>
                             <span class="mt-2 flex items-center"></span>
                       </div>
