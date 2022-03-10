@@ -18,15 +18,46 @@
 
     </head>
 <body class="h-full w-full bg-gray-100 font-ptSans">
-    <header class="animate__animated animate__fadeInDown mt-12 ml-10 md:ml-0 bg-gray-100" >
-        <nav class="md:grid grid-cols-8 gap-10 ">
-            <div class="md:col-start-2 mb-5 md:mb-0">
-                <a href="/" class="logo text-2xl">Vladislav Goian</a>
+    <header class="animate__animated animate__fadeInDown mt-12 md:ml-0 bg-gray-100 relative z-50" >
+        <nav class="flex justify-between md:grid grid-cols-8 gap-10 ">
+            <div class="md:col-start-2 md:mb-0">
+                <a href="/" class="logo text-2xl ml-5 md:ml-0 font-ptSerif italic">Vladislav Goian</a>
             </div>
-            <div class="col-start-6 justify-self-end"><a href="https://github.com/vladislav-gg" class="text-xl font-ptSans font-medium undercover">Github</a></div>
-            <div class="col-start-7 justify-self-end"><a href="https://www.linkedin.com/in/vladislav-goian-102419145/" class="text-xl font-ptSans font-medium undercover">Linkedin</a></div>
+            <!-- MOBILE BUTTON -->
+            <div class="md:hidden flex items-center flex-col mr-5">
+                <button class="outline-none mobile-menu-button">
+                <svg class=" w-8 h-8 text-gray-500 "
+                    x-show="!showMenu"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div class="hidden mobile-menu fixed top-10 left-0 bottom-0 flex flex-col w-full max-w-sm bg-gray-100 border-r overflow-y-auto min-h-screen ">
+                <div class=" flex flex-col text-left mt-12 ml-5">
+                    <div class="md:hidden mt-10"><a href="https://github.com/vladislav-gg" class="text-7xl font-ptSans font-semibold undercover">Github</a></div>
+                    <div class="md:hidden mt-10"><a href="https://www.linkedin.com/in/vladislav-goian-102419145/" class="text-7xl font-ptSans font-semibold undercover">Linkedin</a></div>
+                    <div class="md:hidden mt-10">
+                        <a href="https://www.linkedin.com/in/vladislav-goian-102419145/" class="text-7xl font-ptSans font-semibold undercover">Projects</a>
+                        <div class="mt-5 ml-8 flex flex-col">
+                            <a href="https://vladislavgoian.com/theatre" class="font-ptSans text-2xl font-medium  ">Chernivtsi theatre</a>
+                            <a href="https://vladislavgoian.com/university" class="font-ptSans text-2xl font-medium mt-5 ">Chernivtsi university</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- MOBILE NAV -->
+            <!-- DESKTOP NAV -->
+            <div class="hidden md:grid col-start-6 justify-self-end "><a href="https://github.com/vladislav-gg" class="text-xl font-ptSans font-medium undercover">Github</a></div>
+            <div class="hidden md:grid col-start-7 justify-self-end  md:visible"><a href="https://www.linkedin.com/in/vladislav-goian-102419145/" class="text-xl font-ptSans font-medium undercover">Linkedin</a></div>
         </nav>
-    </header>
+    </header> 
     <div class="w-full flex justify-center mt-32 ">
         <div class="wrapper flex flex-col justify-center animate__animated animate__fadeIn animate__slower">
             <div class="max-w-7xl flex flex-col md:flex-row md:justify-between">
@@ -39,8 +70,8 @@
                         google authentication, integrated Stripe payment for tickets (press "Buy ticket" button to 
                         test), mail subscription form connected to mailchimp which will send you welcome email 
                         if you subscribe. The website is fully responsive and styled with TailwindCSS.<br>
-                        Link to github.
-                        <p class="mt-3">Techonolgies and libraries used:
+                        <a href="https://github.com/vladislav-gg/chernivtsi_university">github.com/vladislav-gg/chernivtsi_university</a>
+                        <p class="mt-6">Techonolgies and libraries used:
                             <ul class="list-disc list-inside ">
                                 <li class="mt-1">Next.js</li>
                                 <li class="mt-1">Stripe API</li>
