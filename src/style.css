@@ -2,14 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-.undercover{
-  @apply border-b-4 border-transparent;  
-}  
-
-.undercover:hover{
-  @apply border-primary transition duration-300 ease-in-out;
-
+.undercover {
+	@apply border-b-4 border-transparent;
 }
 
+.undercover:hover {
+	@apply border-primary transition duration-300 ease-in-out;
+}
+.green_hover:hover {
+	@apply text-green-500;
+}
