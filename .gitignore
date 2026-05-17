@@ -45,6 +45,8 @@ Thumbs.db
 *.pem
 
 # track these files, if they exist
+!.github
+!.github/**
 !.dockerignore
 !.editorconfig
 !.env.example
