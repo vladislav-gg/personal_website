@@ -1,0 +1,111 @@
+<header
+    class="animate__animated animate__fadeInDown mt-12 md:ml-0 bg-gray-100 relative z-50"
+>
+    <nav class="flex justify-between md:grid grid-cols-8 gap-10">
+        <div class="md:col-start-2 md:mb-0">
+            <a
+                href="/"
+                class="logo text-2xl ml-5 md:ml-0 font-ptSans hover:text-green-500"
+                >Home</a
+            >
+        </div>
+        <!-- MOBILE BUTTON -->
+        <div class="md:hidden flex items-center flex-col pr-5">
+            <button class="outline-none mobile-menu-button">
+                <svg
+                    id="icon-hamburger"
+                    class="w-8 h-8 text-gray-500"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg
+                    id="icon-close"
+                    class="w-8 h-8 text-gray-500 hidden"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div
+                class="hidden mobile-menu fixed top-10 left-0 bottom-0 flex flex-col h-full w-full bg-gray-100 border-r overflow-y-auto min-h-screen"
+            >
+                <div class="flex flex-col text-left mt-12 ml-5">
+                    <div class="md:hidden mt-10">
+                        <a
+                            href="https://github.com/vladislav-gg"
+                            class="text-6xl font-ptSans font-semibold">Github</a
+                        >
+                    </div>
+                    <div class="md:hidden mt-10">
+                        <a
+                            href="https://www.linkedin.com/in/vladislav-goian-102419145/"
+                            class="text-6xl font-ptSans font-semibold"
+                            >Linkedin</a
+                        >
+                    </div>
+                    <div class="md:hidden mt-10">
+                        <a
+                            href="https://drive.google.com/file/d/1huxJu-cNwGC4U5qFSvnx2BbEX6Xdprrv/view?usp=sharing"
+                            class="text-6xl font-ptSans font-semibold">Resume</a
+                        >
+                    </div>
+                    <div class="md:hidden mt-10">
+                        <a
+                            href="/projects"
+                            class="text-6xl font-ptSans font-semibold"
+                            >Projects</a
+                        >
+                        <div class="mt-5 ml-8 flex flex-col">
+                            <a
+                                href="/projects/theatre"
+                                class="font-ptSans text-2xl font-medium"
+                                >Chernivtsi theatre</a
+                            >
+                            <a
+                                href="/projects/university"
+                                class="font-ptSans text-2xl font-medium mt-5"
+                                >Chernivtsi university</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MOBILE NAV -->
+        <!-- DESKTOP NAV -->
+        <div
+            class="hidden md:grid col-start-5 justify-self-end hover:text-green-500"
+        >
+            <a
+                href="https://github.com/vladislav-gg"
+                class="text-2xl font-ptSans font-medium">Github</a
+            >
+        </div>
+        <div class="hidden md:grid col-start-6 justify-self-end md:visible">
+            <a
+                href="https://www.linkedin.com/in/vladislav-goian-102419145/"
+                class="text-2xl font-ptSans font-medium hover:text-green-500"
+                >Linkedin</a
+            >
+        </div>
+        <div
+            class="hidden md:grid col-start-7 justify-self-end md:visible hover:text-green-500"
+        >
+            <a
+                href="https://drive.google.com/file/d/1huxJu-cNwGC4U5qFSvnx2BbEX6Xdprrv/view?usp=sharing"
+                class="text-2xl font-ptSans font-medium">Resume</a
+            >
+        </div>
+    </nav>
+</header>

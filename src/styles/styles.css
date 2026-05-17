@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #13DEAD;
+  --color-secondary: #ffed4a;
+  --color-danger: #e3342f;
+  --color-footer-color: #EFEFEF;
+
+  --font-ptSerif: "PT Serif", serif;
+  --font-ptSans: "PT Sans", sans-serif;
+
+  --animate-blob: blob 10s infinite;
+
+  @keyframes blob {
+    0%   { transform: scale(1); }
+    33%  { transform: scale(1.2); }
+    66%  { transform: scale(0.8); }
+    100% { transform: scale(1); }
+  }
+}
+
+.undercover {
+  @apply border-b-4 border-transparent;
+}
+
+.undercover:hover {
+  @apply border-primary transition duration-300 ease-in-out;
+}
+
+.green_hover:hover {
+  @apply text-green-500;
+}
