@@ -10,5 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		iconHamburger.classList.toggle("hidden");
 		iconClose.classList.toggle("hidden");
 		document.body.style.overflow = isOpen ? "" : "hidden";
+		document.documentElement.style.overflow = isOpen ? "" : "hidden";
 	});
 });
