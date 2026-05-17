@@ -1,0 +1,61 @@
+---
+import SiteLayout from "../../layout/SiteLayout.astro";
+---
+
+<SiteLayout title="Jato website project">
+    <div class="w-full flex justify-center mt-16 md:mt-32">
+        <div
+            class="wrapper flex flex-col justify-center animate__animated animate__fadeIn animate__slower"
+        >
+            <div class="max-w-7xl flex flex-col md:flex-row md:justify-between">
+                <div class="left-container ml-5 md:ml-0">
+                    <h2
+                        class="font-semibold text-gray-900 text-3xl font-ptSerif hover:text-gray-600 underline"
+                    >
+                        <a href="https://jato.com">Jato website</a>
+                    </h2>
+                    <p class="w-80 text-2xl mt-3">
+                        A website for Jato automotive company.
+                    </p>
+                </div>
+                <div
+                    class="right-container max-w-xl font-ptSans ml-5 md:ml-24 text-xl mt-7 md:mt-0"
+                >
+                    <p>
+                        Our team built a full website for Jato, a global
+                        automotive data company. The website was built in
+                        HubSpot with vanilla SCSS, JavaScript and HTML. More
+                        than 40 custom modules were created and a full CMS
+                        configuration with SEO audit was conducted.
+                    </p>
+                    <p class="mt-6">
+                        Technologies used:
+                        <ul class="list-disc list-inside ml-1">
+                            <li class="mt-1">HubSpot CMS</li>
+                            <li class="mt-1">SCSS</li>
+                            <li class="mt-1">JavaScript</li>
+                            <li class="mt-1">HTML</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="max-w-7xl overflow-hidden mt-16">
+                <img class="w-full object-cover" src="/img/jato-1.png" alt="Jato screenshot 1" />
+            </div>
+            <div class="max-w-7xl overflow-hidden mt-12">
+                <img class="w-full object-cover" src="/img/jato-2.png" alt="Jato screenshot 2" />
+            </div>
+            <div class="max-w-7xl mt-12 mb-12">
+                <video
+                    class="w-full"
+                    src="/videos/jato-vid.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                ></video>
+            </div>
+        </div>
+    </div>
+</SiteLayout>
