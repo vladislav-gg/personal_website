@@ -38,44 +38,54 @@
                 </svg>
             </button>
             <div
-                class="hidden mobile-menu fixed top-10 left-0 bottom-0 flex flex-col h-full w-full bg-gray-100 border-r overflow-y-auto min-h-screen"
+                class="hidden mobile-menu fixed top-8 left-0 bottom-0 flex flex-col h-full w-full bg-gray-100 border-r overflow-y-auto min-h-screen"
             >
-                <div class="flex flex-col text-left mt-12 ml-5">
-                    <div class="md:hidden mt-10">
+                <div class="flex flex-col text-left mt-12 m-5">
+                    <div class="md:hidden mt-5">
                         <a
                             href="https://github.com/vladislav-gg"
-                            class="text-6xl font-ptSans font-semibold">Github</a
+                            class="text-5xl font-ptSans font-semibold">Github</a
                         >
                     </div>
-                    <div class="md:hidden mt-10">
+                    <div class="md:hidden mt-5">
                         <a
                             href="https://www.linkedin.com/in/vladislav-goian-102419145/"
-                            class="text-6xl font-ptSans font-semibold"
+                            class="text-5xl font-ptSans font-semibold"
                             >Linkedin</a
                         >
                     </div>
-                    <div class="md:hidden mt-10">
+                    <div class="md:hidden mt-5">
                         <a
                             href="https://drive.google.com/file/d/1huxJu-cNwGC4U5qFSvnx2BbEX6Xdprrv/view?usp=sharing"
-                            class="text-6xl font-ptSans font-semibold">Resume</a
+                            class="text-5xl font-ptSans font-semibold">Resume</a
                         >
                     </div>
-                    <div class="md:hidden mt-10">
+                    <div class="md:hidden mt-4">
                         <a
-                            href="/personal_website/projects"
-                            class="text-6xl font-ptSans font-semibold"
+                            href="/projects"
+                            class="text-5xl font-ptSans font-semibold"
                             >Projects</a
                         >
-                        <div class="mt-5 ml-8 flex flex-col">
+                        <div class="mt-5 ml-8 flex flex-col gap-5">
                             <a
-                                href="/personal_website/projects/theatre"
-                                class="font-ptSans text-2xl font-medium"
-                                >Chernivtsi theatre</a
+                                href="/projects/signalsfromtheshore"
+                                class="font-ptSans text-2xl font-medium flex items-center gap-2"
+                                ><i class="icon"></i>Signals from the Shore</a
                             >
                             <a
-                                href="/personal_website/projects/university"
-                                class="font-ptSans text-2xl font-medium mt-5"
-                                >Chernivtsi university</a
+                                href="/projects/jato"
+                                class="font-ptSans text-2xl font-medium flex items-center gap-2"
+                                ><i class="icon"></i>Jato</a
+                            >
+                            <a
+                                href="/projects/theatre"
+                                class="font-ptSans text-2xl font-medium flex items-center gap-2"
+                                ><i class="icon"></i>Chernivtsi theatre</a
+                            >
+                            <a
+                                href="/projects/university"
+                                class="font-ptSans text-2xl font-medium flex items-center gap-2"
+                                ><i class="icon"></i>Chernivtsi university</a
                             >
                         </div>
                     </div>
@@ -109,3 +119,16 @@
         </div>
     </nav>
 </header>
+
+
+<style>
+    .icon {
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800' fill='none' stroke='%23000' stroke-width='3' viewBox='0 0 64 64'%3E%3Cpath d='M55.4 32v21.58a1.81 1.81 0 0 1-1.82 1.82H10.42a1.81 1.81 0 0 1-1.82-1.82V10.42a1.81 1.81 0 0 1 1.82-1.82H32M40.32 8.6H55.4v15.58M19.32 45.72 54.61 8.91'/%3E%3C/svg%3E");
+    }
+</style>
